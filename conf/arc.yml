@@ -1,0 +1,18 @@
+svc_addr: 0.0.0.0:8035
+admin_token: arc666
+logpath: /var/log/arc.log
+mysql:
+    arc:
+        user: arc
+        passwd: arc666
+        addr: 127.0.0.1
+        port: 3366
+        db: arc
+        timeout: 1800
+        # set connect pool
+        conn_max_open: 50
+        conn_max_idle: 20
+        # unit: second, to prevent mysql service closing connections
+        conn_max_lifetime: 10
+        params:
+            charset: utf8mb4
